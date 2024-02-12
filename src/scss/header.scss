@@ -1,0 +1,231 @@
+//====================================================================================================
+@use "sass:math";
+
+// .header__login-off
+
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    @include adaptiv-value("top", 15, 2, 1);
+    @include adaptiv-value("font-size", 20, 14, 1);
+    @include adaptiv-value("height", 50, 30, 1);
+    border-bottom: 1px solid $hoverColor;
+    font-weight: 500;
+
+    // .header__wrapper
+
+    &__wrapper {
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 100%;
+    }
+
+    // .header__container
+
+    &__container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 0.5fr;
+
+        @media (max-width: $md3+px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr auto;
+        }
+    }
+
+    // .header__instruction
+
+    &__instruction {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // .header__instruction-link
+
+    &__instruction-link {
+        color: black;
+        @media (any-hover: hover) {
+            &:hover {
+                color: $hoverColor;
+                transition: all 0.3s ease 0s;
+            }
+        }
+    }
+
+    // .header__main
+
+    &__main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // .header__main-link
+
+    &__main-link {
+        color: black;
+        @media (any-hover: hover) {
+            &:hover {
+                color: $hoverColor;
+                transition: all 0.3s ease 0s;
+            }
+        }
+    }
+
+    // .header__login
+
+    &__login {
+    }
+}
+.login {
+    // .login__off
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__off {
+    }
+
+    // .login__off-button
+
+    &__off-button {
+        font-weight: 500;
+        //display: none;
+        @media (any-hover: hover) {
+            &:hover {
+                color: $hoverColor;
+                border-bottom: 1px solid $hoverColor;
+                transition: all 0.3s ease 0s;
+            }
+        }
+    }
+
+    // .login__on
+
+    &__on {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 100%;
+    }
+}
+.on-login {
+    // .on-login__settings
+    font-weight: 500;
+    &__settings {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // .on-login__settings-link
+
+    &__settings-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    //////////////////////////////////////
+    
+    &__arrowDown {
+        // @media(max-width: $md3+px){
+        //     display: none;
+        // }
+        display: none;
+        @media(max-width: $md3+px){
+            display: block;
+            &._active{
+                transform: rotate(180deg);
+                transition: all 0.3s ease 0s;
+            }
+        }
+    }
+    &__list {
+        display: none;
+        &._hoverBox{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            overflow: auto;
+            top: 120%;
+            transition: all 0.5s ease 0s;
+            background-color: orange;
+            padding: 10px;
+            border-radius: 25px;
+            row-gap: 5px;
+        }
+    }
+    &__item {
+    }
+    &__link {
+        color: black;
+    }
+
+    // .on-login__shablons
+
+    &__shablons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media(max-width: $md3+px){
+            display: none;
+        }
+    }
+
+    // .on-login__shablons-link
+
+    &__shablons-link {
+        color: black;
+        @media (any-hover: hover) {
+            &:hover {
+                color: $hoverColor;
+                transition: color 0.3s ease 0s;
+            }
+        }
+    }
+
+    // .on-login__exit
+
+    &__exit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media(max-width: $md3+px){
+            display: none;
+        }
+    }
+
+    // .on-login__exit-link
+
+    &__exit-link {
+        color: black;
+        @media (any-hover: hover) {
+            &:hover {
+                color: $hoverColor;
+                transition: color 0.3s ease 0s;
+            }
+        }
+    }
+}
+.validation_login {
+    display: none;
+}
+
+div ._icon-acount {
+    font-weight: 900;
+    @include adaptiv-value('font-size', 30, 18, 1);
+    color: black;
+    border: 1px solid black;
+    padding-top: 2px;
+    border-radius: 25px;
+    @media (any-hover: hover) {
+        &:hover {
+            border-color: $hoverColor;
+            color: $hoverColor;
+            transition: color 0.3s ease 0s;
+        }
+    }
+}   

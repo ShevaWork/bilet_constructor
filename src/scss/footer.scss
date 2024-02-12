@@ -1,0 +1,127 @@
+@use "sass:math";
+.footer {
+    width: 100%;
+
+    // .footer__wrapper
+
+    &__wrapper {
+        @include adaptiv-value("padding-top", 40, 8, 1);
+
+        @include adaptiv-value("padding-bottom", 10, 3, 1);
+        border-top: solid 2px black;
+    }
+
+    // .footer__container
+
+    &__container {
+    }
+
+    // .footer__body
+
+    &__body {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 0.5fr;
+        @media (max-width: $md4+px) {
+            grid-template-columns: auto;
+        }
+    }
+
+    // .footer__redactor
+
+    &__redactor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        @include adaptiv-value("font-size", 25, 16, 1);
+        @media (min-width: $md4+px) {
+            border-right: 1px solid black;
+        }
+        @media (max-width: $md4+px) {
+            margin: 5px;
+            border-bottom: 1px solid black;
+        }
+    }
+
+    // .footer__redactor-link
+
+    &__redactor-link {
+        color: black;
+        @media (any-hover: hover) {
+            &:hover {
+                color: $hoverColor;
+                transition: all 0.3s ease 0s;
+            }
+        }
+    }
+
+    // .footer__contacts
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+        @include adaptiv-value("font-size", 16, 10, 1);
+        @media (max-width: $md4+px) {
+            padding: 5px;
+            border-bottom: 1px solid black;
+        }
+    }
+
+    // .footer__contacts-title
+
+    &__contacts-title {
+    }
+
+    // .footer__contacts-text
+
+    &__contacts-text {
+    }
+
+    // .footer__suport
+
+    &__suport {
+        @media (min-width: $md4+px) {
+            border-left: 1px solid black;
+        }
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        @include adaptiv-value("font-size", 16, 10, 1);
+    }
+}
+.suport-footer {
+    @include adaptiv-value('padding-left', 10, 3, 1);
+    // .suport-footer__title
+
+    &__title {
+        text-align: center;
+    }
+
+    // .suport-footer__form
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__form-input {
+        margin-top: 5px;
+        padding: 5px;
+        border-radius: 25px;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+    }
+    &__form-btn {
+        margin-top: 5px;
+        background-color: orange;
+        border-radius: 25px;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                transition: all 0.3s ease 0s;
+                background-color: $hoverColor;
+            }
+        }
+    }
+}

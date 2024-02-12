@@ -1,0 +1,722 @@
+.redactor {
+    @include adaptiv-value('font-size', 14, 10, 1);
+    @include adaptiv-value("padding-top", 25, 3, 1);
+    width: 100%;
+    left: 0;
+    top: 0;
+    // .redactor__wrapper
+
+    &__wrapper {
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    // .redactor__container
+
+    &__container {
+    }
+
+    // .redactor__body
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .redactor__kolon
+
+    &__kolon {
+        @include adaptiv-value("padding-bottom", 15, 3, 1);
+        border-bottom: 1px solid $hoverColor;
+    }
+
+    // .redactor__content
+
+    &__content {
+        @include adaptiv-value("padding-top", 15, 3, 1);
+    }
+}
+.kolon {
+    width: 100%;
+    // .kolon__wrapper
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        @include adaptiv-value("gap", 20, 0, 1);
+        @media(max-width: $md3+px){
+            grid-template-columns: 1fr;
+            font-size: 13px;
+        }
+    }
+
+    // .kolon__form-header
+
+    &__form-header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    // .kolon__form-zatver
+
+    &__form-zatver {
+    }
+
+    // .kolon__footer
+
+    &__footer {
+    }
+}
+.header-form {
+    @include adaptiv-value("gap", 5, 1, 1);
+    // .header-form__university
+
+    &__university {
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        @media (any-hover: hover) {
+            &:hover {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            &:focus {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .header-form__fakultet
+
+    &__fakultet {
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        @media (any-hover: hover) {
+            &:hover {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            &:focus {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .header-form__specialnist
+
+    &__specialnist {
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        @media (any-hover: hover) {
+            &:hover {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            &:focus {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .header-form__specializaciya
+
+    &__specializaciya {
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        @media (any-hover: hover) {
+            &:hover {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            &:focus {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .header-form__osv-prog
+
+    &__osv-prog {
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        @media (any-hover: hover) {
+            &:hover {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            &:focus {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .header-form__okr
+
+    &__okr {
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        @media (any-hover: hover) {
+            &:hover {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            &:focus {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .header-form__duscuplina
+
+    &__duscuplina {
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        @media (any-hover: hover) {
+            &:hover {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            &:focus {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .header-form__add
+
+    &__add {
+        background-color: orange;
+        border-radius: 6px;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $hoverColor;
+            }
+            &:focus {
+                background-color: $hoverColor;
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+}
+.zatver-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @include adaptiv-value("gap", 5, 1, 1);
+    // .zatver-form__zatverd
+
+    &__zatverd {
+        resize: none;
+        height: 50%;
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        @media (any-hover: hover) {
+            &:hover {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            &:focus {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .zatver-form__protokol
+
+    &__protokol {
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        @media (any-hover: hover) {
+            &:hover {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            &:focus {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .zatver-form__add
+
+    &__add {
+        background-color: orange;
+        border-radius: 6px;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $hoverColor;
+            }
+            &:focus {
+                background-color: $hoverColor;
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+}
+.footer-kolon {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @include adaptiv-value("gap", 5, 1, 1);
+    // .footer-kolon__posada
+
+    &__posada {
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        @media (any-hover: hover) {
+            &:hover {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            &:focus {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .footer-kolon__posada-name
+
+    &__posada-name {
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        @media (any-hover: hover) {
+            &:hover {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            &:focus {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .footer-kolon__prepod
+
+    &__prepod {
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        @media (any-hover: hover) {
+            &:hover {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            &:focus {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .footer-kolon__prepod-name
+
+    &__prepod-name {
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        @media (any-hover: hover) {
+            &:hover {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            &:focus {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .footer-kolon__add
+
+    &__add {
+        background-color: orange;
+        border-radius: 6px;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $hoverColor;
+            }
+            &:focus {
+                background-color: $hoverColor;
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+}
+.content {
+    display: grid;
+    grid-template-columns: 2.6fr 1fr;
+    @media(max-width: $md3+px){
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    // .content__bilet
+
+    &__bilet {
+        @media(max-width: $md3+px){
+            @include adaptiv-value('margin-top', 10, 5, 1);
+            @include adaptiv-value('padding-top', 10, 5, 1);
+            border-top: 1px solid $hoverColor;
+        }
+    }
+    &__bilet-view {
+        @include adaptiv-value("padding-top", 10, 3, 1);
+
+    }
+
+    // .content__count-bilet
+
+    &__count-bilet {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        @include adaptiv-value("gap", 10, 3, 1);
+        width: 100%;
+    }
+
+    // .content__input-count
+
+    &__input-count {
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        @media (any-hover: hover) {
+            &:hover {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            &:focus {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+    &__input-count-btn {
+        background-color: orange;
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $hoverColor;
+            }
+            &:focus {
+                background-color: $hoverColor;
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .content__add-zavd
+
+    &__add-zavd {
+    }
+}
+.zavd-add {
+    @include adaptiv-value("padding-left", 10, 0, 1);
+    display: flex;
+    flex-direction: column;
+    @include adaptiv-value("gap", 5, 2, 1);
+    // .zavd-add__txt
+
+    &__txt {
+        display: grid;
+        grid-template-columns: 1fr 20%;
+        @include adaptiv-value("gap", 5, 2, 1);
+    }
+
+    // .zavd-add__txt-add
+
+    &__txt-add {
+        background-color: orange;
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $hoverColor;
+            }
+            &:focus {
+                background-color: $hoverColor;
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .zavd-add__txt-file
+
+    &__txt-file {
+        background-color: orange;
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $hoverColor;
+            }
+            &:focus {
+                background-color: $hoverColor;
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .zavd-add__docx
+
+    &__docx {
+        display: grid;
+        grid-template-columns: 1fr 20%;
+        @include adaptiv-value("gap", 5, 2, 1);
+    }
+
+    // .zavd-add__docx-add
+
+    &__docx-add {
+        background-color: orange;
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $hoverColor;
+            }
+            &:focus {
+                background-color: $hoverColor;
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .zavd-add__docx-file
+
+    &__docx-file {
+        background-color: orange;
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $hoverColor;
+            }
+            &:focus {
+                background-color: $hoverColor;
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .zavd-add__value-zavd
+
+    &__value-zavd {
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        @media (any-hover: hover) {
+            &:hover {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            &:focus {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .zavd-add__form
+
+    &__form {
+        display: flex;
+        flex-direction: row;
+        @include adaptiv-value("gap", 5, 0, 1);
+        @media(max-width: $md3+px){
+            flex-direction: column-reverse;
+        }
+    }
+
+    // .zavd-add__first-row
+
+    &__first-row {
+        flex: 1 1 80%;   
+        @media(max-width: $md3+px){
+            width: 100%;
+        }
+    }
+
+    // .zavd-add__second-row
+
+    &__second-row {
+        flex: auto;
+        width: auto;
+        height: auto;
+    }
+}
+.first-row {
+    // .first-row__textarea
+
+    &__textarea {
+        resize: none;
+        width: 100%;
+        @include adaptiv-value("height", 120, 100, 1);
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        @include adaptiv-value('margin-bottom', 5, 2, 1);
+        border-radius: 6px;
+        @media (any-hover: hover) {
+            &:hover {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            &:focus {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .first-row__buttons
+
+    &__buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @include adaptiv-value("gap", 5, 2, 1);
+    }
+
+    // .first-row__add-zavd
+
+    &__add-zavd {
+        background-color: orange;
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $hoverColor;
+            }
+            &:focus {
+                background-color: $hoverColor;
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .first-row__remove-zavd
+
+    &__remove-zavd {
+        background-color: orange;
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $hoverColor;
+            }
+            &:focus {
+                background-color: $hoverColor;
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+}
+.second-row {
+    display: flex;
+    flex-direction: column;
+    @include adaptiv-value('gap', 5, 1, 1);
+    @include adaptiv-value('font-size', 25, 15, 1);
+    @media(max-width: $md3+px){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-top: 2px;
+    }
+    // .second-row__add-to-bilet
+
+    &__add-to-bilet {
+        background-color: orange;
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $hoverColor;
+            }
+            &:focus {
+                background-color: $hoverColor;
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .second-row__remove-to-bilet
+
+    &__remove-to-bilet {
+        background-color: orange;
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $hoverColor;
+            }
+            &:focus {
+                background-color: $hoverColor;
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .second-row__add-rating-task
+
+    &__add-rating-task {
+        background-color: orange;
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $hoverColor;
+            }
+            &:focus {
+                background-color: $hoverColor;
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .second-row__download-bilet
+
+    &__download-bilet {
+        background-color: orange;
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $hoverColor;
+            }
+            &:focus {
+                background-color: $hoverColor;
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+}

@@ -1,0 +1,368 @@
+// .bilet {
+//     width: 4 * 210px; //1.41kef
+//     height: 4 * 297px;
+//     background-color: white;
+//     padding-top: 4 * 10px;
+//     margin-bottom: 10px;
+//     font-family:'Times New Roman', Times, serif ;
+//     font-size: 17px;
+//     border: 3px solid black;
+//     border-radius: 10px;
+
+//     // .bilet__wrapper
+
+//     &__wrapper {
+//         display: flex;
+//         flex-direction: column;
+//     }
+
+//     // .bilet__conteiner
+
+//     &__conteiner {
+//     }
+
+//     // .bilet__body
+
+//     &__body {
+//         width: 4 * 190px;
+//         height: 4 * 287px;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+        
+//     }
+
+//     // .bilet__university
+
+//     &__university {
+//         width: 100%;
+//         height: 30px;
+//         text-align: center;
+//     }
+
+//     // .bilet__fakultet
+
+//     &__fakultet {
+//         margin-top: 10px;
+//         width: 100%;
+//         height: 30px;
+//         text-align: center;
+//     }
+
+//     // .bilet__specialnist
+
+//     &__specialnist {
+//         margin-top: 40px;
+//         width: 100%;
+//         height: 30px;
+//     }
+
+//     // .bilet__specializaciya
+
+//     &__specializaciya {
+//         margin-top: 10px;
+//         width: 100%;
+//         height: 30px;
+//     }
+
+//     // .bilet__osvprog
+
+//     &__osvprog {
+//         margin-top: 10px;
+//         width: 100%;
+//         height: 30px;
+//     }
+
+//     // .bilet__okr
+
+//     &__okr {
+//         margin-top: 10px;
+//         width: 100%;
+//         height: 30px;
+//     }
+
+//     // .bilet__duscuplina
+
+//     &__duscuplina {
+//         margin-top: 40px;
+//         width: 100%;
+//         height: 30px;
+//     }
+
+//     // .bilet__number
+
+//     &__number {
+//         margin-top: 10px;
+//         width: 100%;
+//         height: 30px;
+//         text-align: center;
+//     }
+
+//     // .bilet__task
+
+//     &__task {
+//         margin-top: 10px;
+//         width: 100%;
+//         min-height: 80px;
+//     }
+//     &__header {
+//         width: 100%;
+//     }
+//     &__content {
+//         width: 100%;
+//         flex: 1 0 auto;
+//     }
+
+//     &__footer {
+//         min-height: 120px;
+//         width: 100%;
+//         flex: 0 0 auto;
+//     }
+
+//     // .bilet__protokol
+
+//     &__protokol {
+//         width: 50%;
+//         height: 80px;
+//     }
+//     &__protokol-number{
+//         width: 50%;
+//     }
+
+//     // .bilet__footer-name
+
+//     &__footer-name {
+//         width: 100%;
+//         display: flex;
+//         flex-direction: row;
+//     }
+
+//     // .bilet__footer-zav
+
+//     &__footer-zav {
+//         width: 50%;
+//         height: 30px;
+//         margin-top: 10px;
+//         display: flex;
+//         flex-direction: row;
+//     }
+
+//     // .bilet__zavkaf
+
+//     &__zavkaf {
+        
+        
+//     }
+
+//     // .bilet__zavkafname
+
+//     &__zavkafname {
+        
+//     }
+
+//     // .bilet__footer-prep
+
+//     &__footer-prep {
+//         width: 50%;
+//         height: 30px;
+//         margin-top: 10px;
+//         display: flex;
+//         flex-direction: row;
+//     }
+
+//     // .bilet__prepod
+
+//     &__prepod {
+
+//     }
+
+//     // .bilet__prepodname
+
+//     &__prepodname {
+
+//     }
+// }
+
+
+.bilet {
+    @include adaptiv-value('padding', 5, 2, 1);
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    @include adaptiv-value('font-size', 17, 8, 1);
+    @include adaptiv-value('margin-bottom', 20, 5, 1);
+    margin-bottom: 15px;
+
+    // .bilet__wrapper
+
+    &__wrapper {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 5%;
+        padding-right: 2.5%;
+    }
+
+    // .bilet__conteiner
+
+    &__conteiner {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    // .bilet__body
+
+    &__body {
+        flex: 1 0 auto;
+    }
+
+    // .bilet__header
+
+    &__header {
+    }
+
+    // .bilet__university
+
+    &__university {
+        width: 100%;
+        height: 1em;
+        margin-bottom: 1.5em;
+        text-align: center;
+    }
+
+    // .bilet__fakultet
+
+    &__fakultet {
+        width: 100%;
+        height: 1em;
+        margin-bottom: 1.5em;
+        text-align: center;
+    }
+
+    // .bilet__specialnist
+
+    &__specialnist {
+        width: 100%;
+        height: 1em;
+        margin-bottom: 1.5em;
+        margin-top: 2.5em;
+    }
+
+    // .bilet__specializaciya
+
+    &__specializaciya {
+        width: 100%;
+        height: 1em;
+        margin-bottom: 1.5em;
+    }
+
+    // .bilet__osvprog
+
+    &__osvprog {
+        width: 100%;
+        height: 1em;
+        margin-bottom: 1.5em;
+    }
+
+    // .bilet__okr
+
+    &__okr {
+        width: 100%;
+        height: 1em;
+        margin-bottom: 1.5em;
+    }
+
+    // .bilet__duscuplina
+
+    &__duscuplina {
+        width: 100%;
+        height: 1em;
+        margin-bottom: 1.5em;
+    }
+
+    // .bilet__content
+
+    &__content {
+        min-height: 30em;
+    }
+
+    // .bilet__number
+
+    &__number {
+        width: 100%;
+        height: 1em;
+        margin-bottom: 1.5em;
+        text-align: center;
+    }
+
+    // .bilet__task
+
+    &__task {
+        width: 100%;
+        min-height: 1em;
+        margin-bottom: 1.5em;
+    }
+
+    // .bilet__footer
+
+    &__footer {
+        flex: 0 0 auto;
+    }
+
+    // .bilet__protokol
+
+    &__protokol {
+        width: 50%;
+    }
+
+    // .bilet__protokol-number
+
+    &__protokol-number {
+        width: 50%;
+        height: 1em;
+        margin-bottom: 1.5em;
+    }
+
+    // .bilet__footer-name
+
+    &__footer-name {
+        width: 100%;
+        height: 1em;
+        margin-bottom: 1.5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    // .bilet__footer-zav
+
+    &__footer-zav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    // .bilet__zavkaf
+
+    &__zavkaf {
+    }
+
+    // .bilet__zavkafname
+
+    &__zavkafname {
+    }
+
+    // .bilet__footer-prep
+
+    &__footer-prep {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    // .bilet__prepod
+
+    &__prepod {
+    }
+
+    // .bilet__prepodname
+
+    &__prepodname {
+    }
+}

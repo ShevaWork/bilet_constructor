@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Дипломна робота Шевчук О.В."
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html',{})
+        <main class="page">
+            <div class="account">
+                <div class="account__wrapper">
+                    <div class="account__container _container">
+                        <div class="account__body">
+                            <div class="account__label">Налаштування акаунту</div>
+                            <form action="" class="account__form">
+                                <div class="account__form-name">
+                                    <div class="account__form-name-label">Ім'я: </div>
+                                    <div class="account__form-name-label-name">xxx</div>
+                                    <input type="text" name="account-name" id="account-name"
+                                        class="account__form-name-input" placeholder="Нові дані">
+                                </div>
+                                <div class="account__form-surname">
+                                    <div class="account__form-surname-label">Прізвище: </div>
+                                    <div class="account__form-surname-label-name">xxx</div>
+                                    <input type="text" name="account-surname" id="account-surname"
+                                        class="account__form-surname-input" placeholder="Нові дані">
+                                </div>
+                                <div class="account__form-second-name">
+                                    <div class="account__form-second-name-label">По-батькові: </div>
+                                    <div class="account__form-second-name-label-name">xxx</div>
+                                    <input type="text" name="account-second-name" id="account-second-name"
+                                        class="account__form-second-name-input" placeholder="Нові дані">
+                                </div>
+                                <div class="account__form-email">
+                                    <div class="account__form-email-label">Адреса електроної пошти: </div>
+                                    <div class="account__form-email-name">xxx</div>
+                                </div>
+                                <input type="button" value="Зберегти" class="account__form-btn">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        @@include('html/footer.html',{})
+    </div>
+    <!-- @@include('html/popup.html',{}) -->
+    @@include('html/js.html',{})
+</body>
+
+</html>

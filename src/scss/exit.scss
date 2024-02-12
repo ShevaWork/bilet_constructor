@@ -1,0 +1,98 @@
+.exit {
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    // .exit__wrapper
+
+    &__wrapper {
+        display: none; /* Модальное окно скрыто по умолчанию */
+        position: fixed; /* Фикс. Позиция на главной странице */
+        z-index: 1; /* Отображение на заднем плане */
+        left: 0;
+        top: 0;
+        width: 100%; /* 100% по ширине */
+        height: 100%; /* 100% по высоте */
+
+        overflow: auto; /* Включить прокрутку, если необходимо */
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    &__close {
+        display: block;
+        width: auto;
+        display: flex;
+        margin-left: auto;
+        background-color: inherit;
+        @include adaptiv-value("font-size", 30, 15, 1);
+    }
+
+    // .exit__container
+
+    &__container {
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% от верха и центрировано */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Может быть больше и меньше, зависит от размеров экрана */
+        box-shadow: 5px 10px 5px #666; /*Добавить тень */
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .exit__body
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @include adaptiv-value("gap", 50, 10, 1);
+    }
+
+    // .exit__button
+
+    &__label {
+        font-weight: 700;
+        @include adaptiv-value("font-size", 24, 12, 1);
+    }
+
+    // .exit__form
+
+    &__form {
+        @include adaptiv-value("font-size", 20, 10, 1);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @include adaptiv-value("column-gap", 50, 3, 1);
+    }
+
+    // .exit__form-yes
+
+    &__form-yes {
+        @include adaptiv-value("padding-left", 20, 5, 0);
+        @include adaptiv-value("padding-right", 20, 5, 0);
+        border-radius: 15px;
+        background-color: orange;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $hoverColor;
+            }
+        }
+    }
+
+    // .exit__form-no
+
+    &__form-no {
+        @include adaptiv-value("padding-left", 20, 5, 0);
+        @include adaptiv-value("padding-right", 20, 5, 0);
+        border-radius: 15px;
+        background-color: orange;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $hoverColor;
+            }
+        }
+    }
+}

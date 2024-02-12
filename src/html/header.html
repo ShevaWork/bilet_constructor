@@ -1,0 +1,37 @@
+<div class="header">
+    <div class="header__wrapper">
+        @@include('login.html',{})
+        @@include('exit.html',{})
+        <div class="header__container _container">
+            <div class="header__instruction">
+                <a href="index.html" class="header__instruction-link">Інструкція користувача</a>
+            </div>
+            <div class="header__main">
+                <a href="redactor.html" class="header__main-link">Конструктор білетів</a>
+            </div>
+            <div class="header__login login ">
+                <div class="login__off">
+                    <button id="login__off-button" class="login__off-button">Вхід/Реєстрація</button>
+                </div>
+                <div class="login__on on-login">
+                    <div class="on-login__settings">
+                        <a href="account.html" class="on-login__settings-link _icon-acount">
+                            <img src="" alt="" srcset="">
+                        </a>
+                    </div>
+                    <button type="submit" class="on-login__arrowDown _icon-arrowDown></button>
+                    <ul class="on-login__list">
+                        <li class="on-login__item"><a href="shablon.html" class="on-login__link">Шаблони</a></li>
+                        <li class="on-login__item"><a href="" class="on-login__link" id="exit_mobile">Вихід</a></li>
+                    </ul>
+                    <div class="on-login__shablons">
+                        <a href="shablon.html" class="on-login__shablons-link">Шаблони</a>
+                    </div>
+                    <div class="on-login__exit">
+                        <a href="#" class="on-login__exit-link" id="exit_pc">Вихід</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

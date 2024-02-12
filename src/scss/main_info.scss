@@ -1,0 +1,87 @@
+.info {
+    width: 100%;
+    left: 0;
+    top: 0;
+    // .info__wrapper
+
+    &__wrapper {
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    // .info__container
+
+    &__container {
+    }
+
+    // .info__body
+
+    &__body {
+        @include adaptiv-value('padding-top', 50, 10, 1);
+    }
+
+    // .info__text
+
+    &__text {
+        @include adaptiv-value('padding-top', 30, 5, 1);
+        @include adaptiv-value('font-size', 16, 10, 1);
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+
+    // .info__form-questions
+
+    &__form-questions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        @include adaptiv-value('padding-bottom', 20, 5, 1);
+        @include adaptiv-value('padding-top', 30, 5, 1);
+    }
+}
+.questions-suport {
+    // .questions-suport__label
+
+    &__label {
+        font-weight: 700;
+        @include adaptiv-value('font-size', 24, 12, 1);
+        @include adaptiv-value('padding-bottom', 3, 1, 1);
+    }
+
+    // .questions-suport__form
+
+    &__form {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include adaptiv-value('gap', 5, 2, 1);
+    }
+    &__form-area{
+        padding: 5px;
+        border-radius: 15px;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+    }
+    &__form-name{
+        padding: 5px;
+        border-radius: 15px;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+    }
+    &__form-email{
+        padding: 5px;
+        border-radius: 15px;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+    }
+    &__form-btn{
+        border-radius: 15px;
+        background-color: orange;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $hoverColor;
+            }
+        }
+    }
+}

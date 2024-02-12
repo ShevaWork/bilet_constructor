@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+	<title>Дипломна робота Шевчук О.В.</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="header">
+    <div class="header__wrapper">
+        <div class="login-page">
+    <div class="login-page__wrapper" id="modal-login">
+        <div class="login-page__container">
+            <input type="button" class="login-page__close" id="login-page__close" value='&times;'>
+            <div class="login-page__body">
+                <div class="login-page__acount login-acount">
+                    <div class="login-acount__label">Вхід</div>
+                    <form action="" class="login-acount__form">
+                        <div class="login-acount__form-email-label">Пошта</div>
+                        <input class="login-acount__form-email" id="login_acount" type="text" name="login-acount__email"
+                            id="login-acount__email" placeholder="e-mail">
+                        <div class="login-acount__form-passwod-label">Пароль</div>
+                        <input class="login-acount__form-passwod" id="password_acount" type="password" name="login-acount__passwod"
+                            id="login-acount__passwod" placeholder="Пароль">
+                        <input class="login-acount__form-btn" id="login-acount__form-btn" type="button" value="Вхід">
+                    </form>
+                </div>
+                <div class="login-page__new-acount new-acount">
+                    <div class="new-acount__label">Реєстрація</div>
+                    <form action="" class="new-acount__form">
+                        <div class="new-acount__form-email-label">Пошта</div>
+                        <input type="text" name="new-acount-email" id="new-acount-email" class="new-acount__form-email" placeholder="e-mail">
+                        <div class="new-acount__form-email-label-double">Ще раз ваша пошта</div>
+                        <input type="text" name="new-acount-email-double" id="new-acount-email-double"
+                            class="new-acount__form-email-double" placeholder="e-mail">
+                        <div class="new-acount__form-passwod-label">Пароль</div>
+                        <input type="password" name="new-acount-passwod" id="new-acount-passwod"
+                            class="new-acount__form-passwod" placeholder="Пароль">
+                        <div class="new-acount__form-passwod-label-double">Ще раз ваш пароль</div>
+                        <input type="password" name="new-acount-passwod-double" id="new-acount-passwod-double"
+                            class="new-acount__form-passwod-double" placeholder="Пароль">
+                        <input type="button" value="Реєстрація" class="new-acount__form-btn" id="new-acount__form-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="exit">
+    <div class="exit__wrapper" id="modal-exit">
+        <div class="exit__container">
+            <input type="button" class="exit__close" id="exit-close" value='&times;'>
+            <div class="exit__body">
+                <div class="exit__label">Ви дійсно хочете вийти?</div>
+                <form action="" class="exit__form">
+                    <input type="button" value="Так, вийти" class="exit__form-yes" id="exit__form-yes">
+                    <input type="button" value="Ні, я залишусь" class="exit__form-no" id="exit__form-no">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="header__container _container">
+            <div class="header__instruction">
+                <a href="index.html" class="header__instruction-link">Інструкція користувача</a>
+            </div>
+            <div class="header__main">
+                <a href="redactor.html" class="header__main-link">Конструктор білетів</a>
+            </div>
+            <div class="header__login login ">
+                <div class="login__off">
+                    <button id="login__off-button" class="login__off-button">Вхід/Реєстрація</button>
+                </div>
+                <div class="login__on on-login">
+                    <div class="on-login__settings">
+                        <a href="account.html" class="on-login__settings-link _icon-acount">
+                            <img src="" alt="" srcset="">
+                        </a>
+                    </div>
+                    <button type="submit" class="on-login__arrowDown _icon-arrowDown"></button>
+                    <ul class="on-login__list">
+                        <li class="on-login__item"><a href="shablon.html" class="on-login__link">Шаблони</a></li>
+                        <li class="on-login__item"><a href="" class="on-login__link" id="exit_mobile">Вихід</a></li>
+                    </ul>
+                    <div class="on-login__shablons">
+                        <a href="shablon.html" class="on-login__shablons-link">Шаблони</a>
+                    </div>
+                    <div class="on-login__exit">
+                        <a href="#" class="on-login__exit-link" id="exit_pc">Вихід</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		<main class="page">
+			<div class="redactor">
+				<div class="rating">
+    <div class="rating__wrapper">
+        <div class="rating__container">
+            <div class="rating__body">
+                <div class="rating__modal" id="rating__modal">
+                    <div class="rating__modal-content content-modal">
+                        <span class='content-modal__close-rating'>&times;</span>
+                        <button type="button" class="content-modal__button" id="content-modal_btn">Обробити данні</button>
+                        <div class="content-modal__updownload">
+                            <div class="content-modal__one-updownload">
+                                <input type="file" accept=".txt" name="one-updownload-txt" id="fileOneTxt"
+                                    class="content-modal__one-updownload-input">
+                                <button class="content-modal__one-updownload-button" id="file_one_txt_btn">txt</button>
+                            </div>
+                            <div class="content-modal__two-updownload">
+                                <input type="file" accept=".txt" name="two-updownload-txt" id="fileTwoTxt"
+                                    class="content-modal__two-updownload-input">
+                                <button class="content-modal__two-updownload-button" id="file_two_txt_btn">txt</button>
+                            </div>
+                            <div class="content-modal__three-updownload">
+                                <input type="file" accept=".txt" name="three-updownload-txt" id="fileThreeTxt"
+                                    class="content-modal__three-updownload-input">
+                                <button class="content-modal__three-updownload-button" id="file_three_txt_btn">txt</button>
+                            </div>
+                        </div>
+
+                        <div class="content-modal__obrobka">
+                            <input type="text" class="content-modal__input" id="content-modal__one-level"
+                                placeholder="Кількість завдань 1 рівня в білеті">
+                            <input type="text" class="content-modal__input" id="content-modal__two-level"
+                                placeholder="Кількість завдань 2 рівня в білеті">
+                            <input type="text" class="content-modal__input" id="content-modal__three-level"
+                                placeholder="Кількість завдань 3 рівня в білеті">
+                        </div>
+                        <div class="rating__tasklist tasklist-rating" id="rating_tasklist">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+				<div class="redactor__wrapper">
+					<div class="redactor__container _container">
+						<div class="redactor__save-container" id="save_container">
+							<input type="text" name="save_input" id="save_input" class="redactor__save-input" placeholder="Назва шаблону">
+							<button type="button" class="redactor__save-btn" id="save_btn">Зберегти</button>
+						</div>
+						<div class="redactor__body">
+							<div class="redactor__kolon kolon">
+								<div class="kolon__wrapper">
+									<form action="" class="kolon__form-header header-form">
+										<input type="text" name="university" id="university-input"
+											class="header-form__university" placeholder="Назва університету">
+										<input type="text" name="fakultet" id="fakultet-input"
+											class="header-form__fakultet" placeholder="Назва факультету">
+										<input type="text" name="specialnist" id="specialnist-input"
+											class="header-form__specialnist" placeholder="Спеціальність">
+										<input type="text" name="specializaciya" id="specializaciya-input"
+											class="header-form__specializaciya" placeholder="Спеціалізація">
+										<input type="text" name="osv-prog" id="osv_prog-input"
+											class="header-form__osv-prog" placeholder="Освітня програма">
+										<input type="text" name="okr" id="okr-input" class="header-form__okr"
+											placeholder="ОКР">
+										<input type="text" name="duscuplina" id="duscuplina-input"
+											class="header-form__duscuplina" placeholder="Дисципліна">
+										<input class="header-form__add" id="add-header" type="button" value="Додати">
+									</form>
+									<form action="" class="kolon__form-zatver zatver-form">
+										<textarea name="zatverd__textarea" id="zatver-form__zatverd"
+											class="zatver-form__zatverd"
+											placeholder="Розглянуто та затверджено на засіданні кафедри комп’ютерних наук та математики"></textarea>
+										<input type="text" name="zatver__protokol" id="zatver-form__protokol"
+											class="zatver-form__protokol"
+											placeholder="Протокол №7 від 7 травня 2027 року">
+										<input type="button" value="Додати" id="zatver-form__add"
+											class="zatver-form__add">
+									</form>
+									<form action="" class="kolon__footer footer-kolon">
+										<input type="text" name="input__posada" id="footer-kolon__posada"
+											class="footer-kolon__posada" placeholder="Посада">
+										<input type="text" name="input__posada-name" id="footer-kolon__posada-name"
+											class="footer-kolon__posada-name" placeholder="ПІБ">
+										<input type="text" name="input__prepod" id="footer-kolon__prepod"
+											class="footer-kolon__prepod" placeholder="Посада">
+										<input type="text" name="input__prepod-name" id="footer-kolon__prepod-name"
+											class="footer-kolon__prepod-name" placeholder="ПІБ">
+										<input type="button" value="Додати" id="footer-kolon__add"
+											class="footer-kolon__add">
+									</form>
+								</div>
+							</div>
+							<div class="redactor__content content">
+								<div class="content__bilet">
+									<form action="" class="content__count-bilet">
+										<input type="text" name="count-bilet" id="count-bilet"
+											class="content__input-count" placeholder="Кількість білетів">
+										<input type="button" value="Встановити задану кількість білетів"
+											class="content__input-count-btn" id="input-count-btn">
+									</form>
+									<div class="content__bilet-view" id="bilet-view">
+										<div class="bilet">
+    <div class="bilet__wrapper">
+        <div class="bilet__conteiner">
+            <div class="bilet__body">
+                <div class="bilet__header">
+                    <div class="bilet__university">
+                        
+                    </div>
+                    <div class="bilet__fakultet">
+                        
+                    </div>
+                    <div class="bilet__specialnist">
+                        
+                    </div>
+                    <div class="bilet__specializaciya">
+                        
+                    </div>
+                    <div class="bilet__osvprog">
+                        
+                    </div>
+                    <div class="bilet__okr">
+                        
+                    </div>
+                    <div class="bilet__duscuplina">
+                        
+                    </div>
+                </div>
+                <div class="bilet__content">
+                    <div class="bilet__number">
+                        Білет №1
+                    </div>
+                    <div class="bilet__task">
+                        
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="bilet__footer">
+                <div class="bilet__protokol">
+
+                </div>
+                <div class="bilet__protokol-number">
+
+                </div>
+                <div class="bilet__footer-name">
+                    <div class="bilet__footer-zav">
+                        <div class="bilet__zavkaf">
+                            
+                        </div>
+                        <div class="bilet__zavkafname">
+                            
+                        </div>
+                    </div>
+                    <div class="bilet__footer-prep">
+                        <div class="bilet__prepod">
+                            
+                        </div>
+                        <div class="bilet__prepodname">
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+									</div>
+								</div>
+								<div class="content__add-zavd zavd-add">
+									<form action="" class="zavd-add__txt">
+										<input type="file" accept=".txt" name="file-txt" id="add-file-txt"
+											class="zavd-add__txt-file">
+										<input type="button" value="txt" id="add-file-txt-btn" class="zavd-add__txt-add">
+									</form>
+									<form action="" class="zavd-add__docx">
+										<input type="file" accept=".docx" name="file-docx" id="add-file-docx"
+											class="zavd-add__docx-file">
+										<input type="button" value="docx" class="zavd-add__docx-add" id="add-file-docx-btn">
+									</form>
+									<input type="text" name="value-zavd" id="zavd-add__value-zavd"
+										class="zavd-add__value-zavd" placeholder="Кількість завдань в білеті">
+									<form action="" class="zavd-add__form">
+										<div class="zavd-add__first-row first-row">
+											<textarea name="first-row__textarea" class="first-row__textarea"
+												placeholder="Впишіть завдання"></textarea>
+											<div class="first-row__buttons">
+												<input type="button" value="+" class="first-row__add-zavd"
+													id="add_textarea_for_zavd">
+												<input type="button" value="-" class="first-row__remove-zavd"
+													id="remove_textarea_for_zavd">
+											</div>
+										</div>
+										<div class="zavd-add__second-row second-row">
+											<button type="button" id="add_to_bilet"
+												class="second-row__add-to-bilet _icon-AddTask"></button>
+											<button type="button" id="remove_to_bilet"
+												class="second-row__remove-to-bilet _icon-RemoveTask"></button>
+											<button type="button" id="add_rating_task"
+												class="second-row__add-rating-task _icon-RatingTasks"></button>
+											<button type="button" id="download_bilet"
+												class="second-row__download-bilet _icon-Download"></button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<div class="footer">
+    <div class="footer__wrapper">
+        <div class="footer__container _container">
+            <div class="footer__body">
+                <div class="footer__redactor">
+                    <a href="redactor.html" class="footer__redactor-link">Конструктор білетів</a>
+                </div>
+                <div class="footer__contacts">
+                    <!-- <div class="footer__contacts-title">Контакти</div> -->
+                    <div class="footer__contacts-text">ovshevchuk.fitu18@kubg.edu.ua</div>
+                    <!-- <div class="footer__contacts-text">інстааааааа</div> -->
+                </div>
+                <div class="footer__suport suport-footer">
+                    <div class="suport-footer__title">Зворотній зв'язок</div>
+                    <form action="" class="suport-footer__form">
+                        <input class="suport-footer__form-input" type="text" name="input-email__footer" id="input-email__footer" placeholder="Місце для e-mail">
+                        <button class="suport-footer__form-btn" id="suport-footer__form-btn" type="button">Відправити</button>
+                    </form>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+	</div>
+	
+	<!-- Swiper -->
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<script src="js/app.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+.rating {
+    // .rating__wrapper
+    font-size: 13px;
+    &__wrapper {
+    }
+
+    // .rating__container
+
+    &__container {
+    }
+
+    // .rating__body
+
+    &__body {
+        @include adaptiv-value("font-size", 13, 9, 1);
+    }
+
+    // .rating__modal
+
+    &__modal {
+        display: none; /* Модальное окно скрыто по умолчанию */
+        position: fixed; /* Фикс. Позиция на главной странице */
+        z-index: 1; /* Отображение на заднем плане */
+        left: 0;
+        top: 0;
+        width: 100%; /* 100% по ширине */
+        height: 100%; /* 100% по высоте */
+
+        overflow: auto; /* Включить прокрутку, если необходимо */
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    // .rating__modal-content
+
+    &__modal-content {
+    }
+
+    // .rating__table
+
+    &__tasklist {
+    }
+}
+.content-modal {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% от верха и центрировано */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Может быть больше и меньше, зависит от размеров экрана */
+    box-shadow: 5px 10px 5px #666; /*Добавить тень */
+    display: flex;
+    flex-direction: column;
+
+    &__button {
+        font-weight: 700;
+        border-radius: 10px;
+        width: 100%;
+        @include adaptiv-value("margin-bottom", 7, 3, 1);
+        background-color: orange;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $hoverColor;
+            }
+            &:focus {
+                background-color: $hoverColor;
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+    &__obrobka {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        @include adaptiv-value("gap", 5, 2, 1);
+        @include adaptiv-value("margin-top", 5, 2, 1);
+    }
+    &__input {
+        border: 1px solid black;
+        @include adaptiv-value("padding-left", 5, 2, 1);
+        @include adaptiv-value("padding-right", 5, 2, 1);
+        border-radius: 6px;
+        @media (any-hover: hover) {
+            &:hover {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            &:focus {
+                box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .content-modal__updownload
+
+    &__updownload {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    // .content-modal__one-updownload
+
+    &__one-updownload {
+        width: 33%;
+        display: flex;
+        flex-direction: row;
+        @include adaptiv-value("gap", 5, 1, 1);
+    }
+
+    // .content-modal__one-updownload-input
+
+    &__one-updownload-input {
+        margin-left: 1%;
+        width: 65%;
+        border: none;
+        font-weight: 700;
+        background-color: orange;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $hoverColor;
+            }
+            &:focus {
+                background-color: $hoverColor;
+            }
+            transition: all 0.3s ease 0s;
+        }
+        font-family: $fontFamily;
+    }
+
+    // .content-modal__one-updownload-button
+
+    &__one-updownload-button {
+        width: 30%;
+        border-radius: 15px;
+        background-color: orange;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $hoverColor;
+            }
+            &:focus {
+                background-color: $hoverColor;
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .content-modal__two-updownload
+
+    &__two-updownload {
+        width: 33%;
+        display: flex;
+        flex-direction: row;
+        @include adaptiv-value("gap", 5, 1, 1);
+    }
+
+    // .content-modal__two-updownload-input
+
+    &__two-updownload-input {
+        margin-left: 2%;
+        width: 65%;
+        border: none;
+        font-weight: 700;
+        font-family: $fontFamily;
+        background-color: orange;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $hoverColor;
+            }
+            &:focus {
+                background-color: $hoverColor;
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .content-modal__two-updownload-button
+
+    &__two-updownload-button {
+        width: 30%;
+        border-radius: 15px;
+        background-color: orange;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $hoverColor;
+            }
+            &:focus {
+                background-color: $hoverColor;
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .content-modal__three-updownload
+
+    &__three-updownload {
+        width: 33%;
+        display: flex;
+        flex-direction: row;
+        @include adaptiv-value("gap", 5, 1, 1);
+    }
+
+    // .content-modal__three-updownload-input
+
+    &__three-updownload-input {
+        margin-left: 3%;
+        width: 65%;
+        border: none;
+        font-weight: 700;
+        font-family: $fontFamily;
+        background-color: orange;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $hoverColor;
+            }
+            &:focus {
+                background-color: $hoverColor;
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .content-modal__three-updownload-button
+
+    &__three-updownload-button {
+        width: 30%;
+        border-radius: 15px;
+        background-color: orange;
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.315);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $hoverColor;
+            }
+            &:focus {
+                background-color: $hoverColor;
+            }
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // .content-modal__close-rating
+
+    &__close-rating {
+        color: #aaa;
+        font-size: 28px;
+        font-weight: bold;
+        width: auto;
+        margin-left: auto;
+    }
+    &__close-rating:hover,
+    &__close-rating:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.tasklist-rating {
+    width: 100%;
+    @include adaptiv-value("margin-top", 10, 5, 1);
+    @include adaptiv-value("padding-top", 5, 3, 1);
+    border-top: 1px solid black;
+    @include adaptiv-value('font-size', 15, 10, 1);
+
+    // .tasklist-rating__column
+
+    &__column {
+        display: flex;
+        flex-direction: row;
+        @include adaptiv-value('margin-bottom', 5, 2, 1);
+        border-bottom: 1px solid black;
+    }
+
+    // .tasklist-rating__column-task
+
+    &__column-task {
+        display: flex;
+        align-items: center;
+    }
+
+    // .tasklist-rating__column-btns
+
+    &__column-radio {
+        border-left: 1px solid black;
+        margin-left: auto;
+        @include adaptiv-value("padding-left", 10, 3, 1);
+        @include adaptiv-value("gap", 5, 1, 1);
+    }
+
+}
+.click{
+    background-color: $hoverColor;
+}
